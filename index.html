@@ -1,125 +1,226 @@
+<!-- /index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Focus Studio | Professional Photography</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Focus Studio – Professional photography services for weddings, portraits and events.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEONFORGE — Premium Gaming Portal</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
-<!-- ================= NAV ================= -->
+<!-- NAV -->
 <header class="nav">
-  <div class="nav-container">
-    <div class="logo">Focus Studio</div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="nav-inner">
+    <div class="logo">NEON<span>FORGE</span></div>
+    <!-- 3 DOT BUTTON -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
+
+  <!-- HIDDEN MENU -->
+  <div class="menu-panel" id="menuPanel">
+    <a href="index.html">Home</a>
+    <a href="pages/games.html">Games</a>
+    <a href="community.html">Community</a>
+    <a href="news.html">News</a>
+    <a href="platforms.html">Platforms</a>
+    <a href="login.html">Login / Sign up</a>
+  </div>
+</div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-overlay reveal">
-    <h1>Capturing Moments<br>That Last Forever</h1>
-    <p>
-      Premium wedding, portrait & event photography with emotion,
-      elegance and timeless quality.
-    </p>
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section">
-  <div class="container narrow reveal">
-    <h2>About Focus Studio</h2>
-    <p>
-      Focus Studio is a professional photography studio delivering
-      high-quality wedding, portrait, and event photography.
-      We don’t just take photos — we tell stories through frames.
-    </p>
-  </div>
-</section>
-
-<!-- ================= GALLERY ================= -->
-<section id="gallery" class="section dark">
-  <div class="container">
-    <h2 class="reveal">Our Work</h2>
-
-    <div class="gallery reveal">
-      <img src="images/g1.jpg" alt="Wedding photography">
-      <img src="images/g2.jpg" alt="Portrait photography">
-      <img src="images/g3.jpg" alt="Event photography">
-      <img src="images/g4.jpg" alt="Studio shoot">
-      <img src="images/g5.jpg" alt="Creative shoot">
-      <img src="images/g6.jpg" alt="Couple shoot">
-      <img src="images/g7.jpg" alt="Fashion shoot">
-      <img src="images/g8.jpg" alt="Professional portrait">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Forge Your <span>Legend</span></h1>
+    <p>Enter a cinematic gaming universe where competition, community, and AAA experiences collide.</p>
+    <div class="hero-cta">
+      <a href="Play.html"
+      class="btn primary">Play Now</a>
+      <a href="store.html"
+      class="btn ghost">Buy Now</a>
     </div>
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services" class="section">
-  <div class="container">
-    <h2 class="reveal">Our Services</h2>
+<!-- FEATURED --><section class="section featured">
+  <h2 class="section-title">Featured Games</h2>
 
-    <div class="services reveal">
-      <div class="service">
-        <h3>Wedding Photography</h3>
-        <p>
-          Complete wedding coverage with cinematic storytelling
-          and premium photo editing.
-        </p>
+  <div class="featured-track">
+
+    <a href="game-details1.html" class="game-card wide">
+      <img src="assets/images/games/cyber-dominion.jpg" alt="Cyber Dominion">
+      <div class="overlay">
+        <h3>Cyber Dominion</h3>
+        <span>FPS / Sci-Fi</span>
       </div>
+    </a>
 
-      <div class="service">
-        <h3>Portrait Sessions</h3>
-        <p>
-          Professional studio & outdoor portraits for individuals,
-          families, and brands.
-        </p>
+    <a href="game-details2.html" class="game-card wide">
+      <img src="assets/images/games/iron-reign.jpg" alt="Iron Reign">
+      <div class="overlay">
+        <h3>Iron Reign</h3>
+        <span>Action / PvP</span>
       </div>
+    </a>
 
-      <div class="service">
-        <h3>Event Coverage</h3>
-        <p>
-          Reliable photography for corporate events, parties,
-          and special occasions.
-        </p>
+    <a href="game-details3.html" class="game-card wide">
+      <img src="assets/images/games/void-eclipse.jpg" alt="Void Eclipse">
+      <div class="overlay">
+        <h3>Void Eclipse</h3>
+        <span>RPG / Open World</span>
+      </div>
+    </a>
+
+    <a href="game-details3.html" class="game-card wide">
+      <img src="assets/images/games/godfall-ascension.jpg" alt="Void Eclipse">
+      <div class="overlay">
+        <h3>Godfall Ascension</h3>
+        <span>Action / Mythic</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- CATALOG -->
+<section class="section catalog">
+  <h2 class="section-title">Game Catalog</h2>
+  <div class="filters">
+    <button class="active">All</button>
+    <button>FPS</button>
+    <button>RPG</button>
+    <button>Adventure</button>
+    <button>Multiplayer</button>
+  </div>
+  <div class="grid">
+     <a href="game-details1.html" class="game-link">
+    <div class="game-card">
+      <img src="assets/images/games/nova-rift.jpg"/>
+      <div class="overlay">
+        <h3>Nova Rift</h3>
+        <span>FPS / Competitive</span>
+      </div>
+    </div>
+    <div class="game-card">
+      <img src="assets/images/games/shadow-realm.jpg"/>
+      <div class="overlay">
+        <h3>Shadow Realm</h3>
+        <span> Dark Fantasy</span>
+      </div>
+    </div>
+    <div class="game-card">
+      <img src="assets/images/games/neon-streets.jpg"/>
+      <div class="overlay">
+        <h3>Neon Streets</h3>
+        <span>Adventure / Story</span>
+      </div>
+    </div>
+    <div class="game-card">
+      <img src="assets/images/games/frostborn-saga.jpg"/>
+      <div class="overlay">
+        <h3>Frostborn Saga</h3>
+        <span>RPG / Nordic</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section contact">
-  <div class="container narrow reveal">
-    <h2>Get in Touch</h2>
-    <p>
-      Ready to book your shoot? Contact us today and let’s create
-      something unforgettable.
-    </p>
-
-    <div class="contact-buttons">
-      <a href="https://wa.me/919999999999" class="btn whatsapp">
-        <span>WhatsApp</span>
-      </a>
-
-      <a href="tel:+919999999999" class="btn call">
-        <span>Call Now</span>
-      </a>
+<!-- COMMUNITY -->
+<section class="section community">
+  <div class="community-box">
+    <h2>Join the Elite Gaming Community</h2>
+    <p>Connect with millions of players, compete in ranked battles, and shape the future of gaming.</p>
+    <div class="hero-cta">
+      <a href="signup.html"
+      <a class="btn primary">Join Now</a>
+    <a href="forums.html"
+      class="btn ghost">Forums</a>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- NEWS -->
+<section class="section news">
+  <h2 class="section-title">Latest News</h2>
+  <div class="news-grid">
+    <article class="news-card">
+      <span class="date">12 AUG 2026</span>
+      <h3>Cyber Dominion Season 3 Launch</h3>
+      <p>New maps, ranked resets, and cinematic content arrive.</p>
+    </article>
+    <article class="news-card">
+      <span class="date">02 AUG 2026</span>
+      <h3>NEONFORGE Global Tournament</h3>
+      <p>$250K prize pool announced for elite teams.</p>
+    </article>
+    <article class="news-card">
+      <span class="date">28 JUL 2026</span>
+      <h3>Next-Gen Platform Support</h3>
+      <p>Full cross-platform play confirmed.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="section platforms">
+  <h2 class="section-title">Available On</h2><!-- PLATFORMS -->
+ <div class="platform-icons">
+  <div class="platform">
+    <img src="assets/images/platforms/steam.png" alt="Steam">
+    <span>STEAM</span>
+  </div>
+
+  <div class="platform">
+    <img src="assets/images/platforms/playstation.png" alt="PlayStation">
+    <span>PLAYSTATION</span>
+  </div>
+
+  <div class="platform">
+    <img src="assets/images/platforms/xbox.png" alt="Xbox">
+    <span>XBOX</span>
+  </div>
+
+  <div class="platform">
+    <img src="assets/images/platforms/mobile.png" alt="Mobile">
+    <span>MOBILE</span>
+  </div>
+  
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Focus Studio. All Rights Reserved.</p>
+  <div class="footer-grid">
+    <div>
+      <h4>About</h4>
+      <p>NEONFORGE is a next-generation gaming portal delivering cinematic digital experiences.</p>
+    </div>
+    <div>
+      <h4>Links</h4>
+      <a>Games</a>
+      <a>Community</a>
+      <a>Support</a>
+      <a>Careers</a>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <a>Discord</a>
+      <a>Twitter</a>
+      <a>YouTube</a>
+      <a>Twitch</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 NEONFORGE. All Rights Reserved.</div>
 </footer>
 
 <script src="main.js"></script>
